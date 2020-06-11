@@ -1,0 +1,59 @@
+#head_row {
+  border-bottom: 1px solid #778899;
+}
+
+.col-md-12 {
+  margin: 3rem;
+}
+
+.noMarginR {
+  margin-right: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#lang_result, #lang_origin {
+  margin: 10px;
+}
+
+.noPadding {
+  padding: 0;
+  margin-right: -150px;
+}
+
+#btn {
+  margin-left: 20px;
+  margin-right: -130px;
+  margin-top: 80px;
+}
+
+#output {
+  background-color: lightgray;
+}
+
+#speak {
+  margin-left: 30px;
+  height: 30px;
+  width: 30px;
+  margin-top: 10px;
+}
+
+.close {
+  margin-left: 15px;
+}
+
+#select-res {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#show-dic {
+  margin-top: 30px;
+}
+
+#show-input {
+  font-size: 30px;
+}
+/*# sourceMappingURL=translate.css.map */

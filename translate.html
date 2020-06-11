@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="translate.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/translate.css">
+    <title>Translate</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" id="head_row">
+            <div class="header">
+                <div class="col-md-4">
+                    <img src="./pic/logo.png">
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-4 noPadding"></div>
+                    <div class="col-md-2 noMarginR">
+                        <select id="lang_origin">
+                            <option value="af">Afrikaans</option>
+                            <option value="sq">Albanian</option>
+                            <option value="am">Amharic</option>
+                            <option value="ar" data-value="ar-SA">Arabic</option>
+                            <option value="hy">Armenian</option>
+                            <option value="az">Azerbaijani</option>
+                            <option value="ba">Bashkir</option>
+                            <option value="eu">Basque</option>
+                            <option value="be">Belarusian</option>
+                            <option value="bn">Bengali</option>
+                            <option value="bs">Bosnian</option>
+                            <option value="bg">Bulgarian</option>
+                            <option value="my">Burmese</option>
+                            <option value="ca">Catalan</option>
+                            <option value="ceb">Cebuano</option>
+                            <option value="zh" data-value="zh-TW">Chinese</option>
+                            <option value="cv">Chuvash</option>
+                            <option value="hr">Croatian</option>
+                            <option value="cs" data-value="cs-CZ">Czech</option>
+                            <option value="da" data-value="da-DK">Danish</option>
+                            <option value="nl" data-value="nl-BE">Dutch</option>
+                            <option value="en" data-value="en-US">English</option>
+                            <option value="eo">Esperanto</option>
+                            <option value="et">Estonian</option>
+                            <option value="fi" data-value="fi-FI">Finnish</option>
+                            <option value="fr" data-value="fr-CA">French</option>
+                            <option value="gl">Galician</option>
+                            <option value="ka">Georgian</option>
+                            <option value="de" data-value="de-DE">German</option>
+                            <option value="el" data-value="el-GR">Greek</option>
+                            <option value="gu">Gujarati</option>
+                            <option value="ht">Haitian</option>
+                            <option value="he" data-value="he-IL">Hebrew</option>
+                            <option value="hi" data-value="hi-IN">Hindi</option>
+                            <option value="mrj">Hill Mari</option>
+                            <option value="hu" data-value="hu-HU">Hungarian</option>
+                            <option value="is">Icelandic</option>
+                            <option value="id" data-value="id-ID">Indonesian</option>
+                            <option value="it" data-value="it-IT">Italian</option>
+                            <option value="ga">Irish</option>
+                            <option value="ja" data-value="ja-JP">Japanese</option>
+                            <option value="jv">Javanese</option>
+                            <option value="kn">Kannada</option>
+                            <option value="kk">Kazakh</option>
+                            <option value="km">Khmer</option>
+                            <option value="ko" data-value="ko-KR">Korean</option>
+                            <option value="ky">Kyrgyz</option>
+                            <option value="lo">Lao</option>
+                            <option value="la">Latin</option>
+                            <option value="lv">Latvian</option>
+                            <option value="lt">Lithuanian</option>
+                            <option value="lb">Luxembourgish</option>
+                            <option value="mk">Macedonian</option>
+                            <option value="ms">Malay</option>
+                            <option value="ml">Malayalam</option>
+                            <option value="mg">Malagasy</option>
+                            <option value="mt">Maltese</option>
+                            <option value="mi">Maori</option>
+                            <option value="mr">Marathi</option>
+                            <option value="mhr">Mari</option>
+                            <option value="mn">Mongolian</option>
+                            <option value="ne">Nepali</option>
+                            <option value="no">Norwegian</option>
+                            <option value="pap">Papiamento</option>
+                            <option value="fa">Persian</option>
+                            <option value="pl" data-value="pl-PL">Polish</option>
+                            <option value="pt" data-value="pt-PT">Portuguese</option>
+                            <option value="pa">Punjabi</option>
+                            <option value="ro" data-value="ro-RO">Romanian</option>
+                            <option value="ru" data-value="ru-RU">Russian</option>
+                            <option value="gd">Scottish Gaelic</option>
+                            <option value="sr">Serbian</option>
+                            <option value="si">Sinhalese</option>
+                            <option value="sk" data-value="sk-SK">Slovak</option>
+                            <option value="sl">Slovenian</option>
+                            <option value="es" data-value="es-AR">Spanish</option>
+                            <option value="su">Sundanese</option>
+                            <option value="sw">Swahili</option>
+                            <option value="sv" data-value="sv-SE">Swedish</option>
+                            <option value="tl">Tagalog</option>
+                            <option value="tg">Tajik</option>
+                            <option value="ta">Tamil</option>
+                            <option value="tt">Tatar</option>
+                            <option value="te">Telugu</option>
+                            <option value="th" data-value="th-TH">Thai</option>
+                            <option value="tr" data-value="tr-TR">Turkish</option>
+                            <option value="udm">Udmurt</option>
+                            <option value="uk">Ukrainian</option>
+                            <option value="ur">Urdu</option>
+                            <option value="uz">Uzbek</option>
+                            <option value="vi">Vietnamese</option>
+                            <option value="cy">Welsh</option>
+                            <option value="xh">Xhosa</option>
+                            <option value="yi">Yiddish</option>
+                        </select>
+                        <button type="button" class="btn btn-default btn-sm" id="speak">
+                            <span class="glyphicon glyphicon-volume-up"></span>
+                        </button>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="col-md-2" id="select-res">
+                        <select id="lang_result">
+                            <option value="af">Afrikaans</option>
+                            <option value="sq">Albanian</option>
+                            <option value="am">Amharic</option>
+                            <option value="ar" data-value="ar-SA">Arabic</option>
+                            <option value="hy">Armenian</option>
+                            <option value="az">Azerbaijani</option>
+                            <option value="ba">Bashkir</option>
+                            <option value="eu">Basque</option>
+                            <option value="be">Belarusian</option>
+                            <option value="bn">Bengali</option>
+                            <option value="bs">Bosnian</option>
+                            <option value="bg">Bulgarian</option>
+                            <option value="my">Burmese</option>
+                            <option value="ca">Catalan</option>
+                            <option value="ceb">Cebuano</option>
+                            <option value="zh" data-value="zh-TW">Chinese</option>
+                            <option value="cv">Chuvash</option>
+                            <option value="hr">Croatian</option>
+                            <option value="cs" data-value="cs-CZ">Czech</option>
+                            <option value="da" data-value="da-DK">Danish</option>
+                            <option value="nl" data-value="nl-BE">Dutch</option>
+                            <option value="en" data-value="en-US">English</option>
+                            <option value="eo">Esperanto</option>
+                            <option value="et">Estonian</option>
+                            <option value="fi" data-value="fi-FI">Finnish</option>
+                            <option value="fr" data-value="fr-CA">French</option>
+                            <option value="gl">Galician</option>
+                            <option value="ka">Georgian</option>
+                            <option value="de" data-value="de-DE">German</option>
+                            <option value="el" data-value="el-GR">Greek</option>
+                            <option value="gu">Gujarati</option>
+                            <option value="ht">Haitian</option>
+                            <option value="he" data-value="he-IL">Hebrew</option>
+                            <option value="hi" data-value="hi-IN">Hindi</option>
+                            <option value="mrj">Hill Mari</option>
+                            <option value="hu" data-value="hu-HU">Hungarian</option>
+                            <option value="is">Icelandic</option>
+                            <option value="id" data-value="id-ID">Indonesian</option>
+                            <option value="it" data-value="it-IT">Italian</option>
+                            <option value="ga">Irish</option>
+                            <option value="ja" data-value="ja-JP">Japanese</option>
+                            <option value="jv">Javanese</option>
+                            <option value="kn">Kannada</option>
+                            <option value="kk">Kazakh</option>
+                            <option value="km">Khmer</option>
+                            <option value="ko" data-value="ko-KR">Korean</option>
+                            <option value="ky">Kyrgyz</option>
+                            <option value="lo">Lao</option>
+                            <option value="la">Latin</option>
+                            <option value="lv">Latvian</option>
+                            <option value="lt">Lithuanian</option>
+                            <option value="lb">Luxembourgish</option>
+                            <option value="mk">Macedonian</option>
+                            <option value="ms">Malay</option>
+                            <option value="ml">Malayalam</option>
+                            <option value="mg">Malagasy</option>
+                            <option value="mt">Maltese</option>
+                            <option value="mi">Maori</option>
+                            <option value="mr">Marathi</option>
+                            <option value="mhr">Mari</option>
+                            <option value="mn">Mongolian</option>
+                            <option value="ne">Nepali</option>
+                            <option value="no">Norwegian</option>
+                            <option value="pap">Papiamento</option>
+                            <option value="fa">Persian</option>
+                            <option value="pl" data-value="pl-PL">Polish</option>
+                            <option value="pt" data-value="pt-PT">Portuguese</option>
+                            <option value="pa">Punjabi</option>
+                            <option value="ro" data-value="ro-RO">Romanian</option>
+                            <option value="ru" data-value="ru-RU">Russian</option>
+                            <option value="gd">Scottish Gaelic</option>
+                            <option value="sr">Serbian</option>
+                            <option value="si">Sinhalese</option>
+                            <option value="sk" data-value="sk-SK">Slovak</option>
+                            <option value="sl">Slovenian</option>
+                            <option value="es" data-value="es-AR">Spanish</option>
+                            <option value="su">Sundanese</option>
+                            <option value="sw">Swahili</option>
+                            <option value="sv" data-value="sv-SE">Swedish</option>
+                            <option value="tl">Tagalog</option>
+                            <option value="tg">Tajik</option>
+                            <option value="ta">Tamil</option>
+                            <option value="tt">Tatar</option>
+                            <option value="te">Telugu</option>
+                            <option value="th" data-value="th-TH">Thai</option>
+                            <option value="tr" data-value="tr-TR">Turkish</option>
+                            <option value="udm">Udmurt</option>
+                            <option value="uk">Ukrainian</option>
+                            <option value="ur">Urdu</option>
+                            <option value="uz">Uzbek</option>
+                            <option value="vi">Vietnamese</option>
+                            <option value="cy">Welsh</option>
+                            <option value="xh">Xhosa</option>
+                            <option value="yi">Yiddish</option>
+                        </select>
+                        <button type="button" class="btn btn-default btn-sm" id="speak">
+                            <span class="glyphicon glyphicon-volume-up"></span>
+                        </button>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                        <textarea name="input" id="input" cols="50" rows="10"
+                            placeholder="Please type any sentense you want to translate..."></textarea>
+                    </div>
+                    <div class="col-md-2" id="btn">
+                        <button type="button" class="btn btn-default btn-sm" id="bttn">
+                            <span class="glyphicon glyphicon-resize-horizontal"></span>
+                        </button>
+                    </div>
+                    <div class="col-md-4">
+                        <textarea name="" id="output" cols="50" rows="10" readonly></textarea>
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-6" id="show-dic">
+                            <p id="show-input"></p>
+                            <p id="show-pos"></p>
+                            <p id="show-ts"></p>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
